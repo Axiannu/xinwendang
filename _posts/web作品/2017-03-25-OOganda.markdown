@@ -1,0 +1,44 @@
+---
+layout: post
+title: Web网页设计作品集
+categories: portfolio
+---
+
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>OO钢弹</title>
+		<meta name="description" content="A basic responsive web page – an example from Chapter 1">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<div class="Header">
+		    <a href="/" class="LogoWrapper"><img height="200" width="1500" quality="high" src="http://a.hiphotos.baidu.com/zhidao/pic/item/a50f4bfbfbedab64532ada0ef536afc378311ea7.jpg" alt="UNSDG_Logo_2015_CH"></a>
+		    <h3>OO钢弹精彩 AMV</h3>
+			<a href="/" class="LogoWrapper"><img src="http://b.hiphotos.baidu.com/zhidao/pic/item/b17eca8065380cd7281939f5a344ad34598281a7.jpg"  /></a>
+		</div>
+			<p>
+			《机动战士高达00》是《机动战士高达》系列以发生在未来世纪的战争为题材的第十二部TV动画，本作以四名高达驾驶员(Gundam Meister)的成长为故事主线，以人与人之间的互相理解为主题。于2007年10月6日起在日本各大电视频道播放，也是首次以高清形式播放的动画。
+		        </p>
+		
+		    
+		<div>
+			<embed height="500" width="100%" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="https://static-s.bilibili.com/miniloader.swf" flashvars="aid=8836943&page=1" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
+		</div>
+		<div>
+			<h3>OO高达第一季</h3>
+		</div>
+			<p>西历2307年，由于化石燃料的枯竭，人类开始寻找全新形式的能源——由3条巨大的轨道式升降梯所组成的巨型太阳能发电系统。然而，能够分享这一能源的，只有世界上的一部分大国及其同盟国。
+拥有3条巨大的轨道式升降梯的3个超大国及其联盟：以「美利坚合众国」为中央政府领导的的「UNION（世界经济联合）」，以「中国」、「俄罗斯」、「印度」为中心的「人类革新联盟」，以及以欧洲为中心的「AEU（新欧盟共同体）」。各大国家联盟为了各自的威信和繁荣，开展了庞大的争霸游戏。没错，即使历史的滚轮驶入了24世纪，人类依然保持着四分五裂的状态。
+在这个战争终日不绝的世界，一个宣称“以武力根绝战争”的私人武装组织出现了。拥有机动战士「高达」的他们，名为「天人（Celestial Being）」。凭借高达强大的性能，他们开始对各国纷争进行武力介入，最终三大阵营在天人和另外三台非天人（THRONE）高达的威胁下被迫联合成为国联，世界第一次走向联合，此时天人开始怀疑自己在伊奥利亚计划中应以被消灭为结局，最终在决战中天人遭重创。</p>
+		<div align="center"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505325450421&di=327dfe86d608f8eb0b2b30dbc24465a4&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F267f9e2f0708283860e07185ba99a9014d08f1b6.jpg"  /><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505325468667&di=194c16a60f0478b075cb51fad52cb812&imgtype=0&src=http%3A%2F%2Fwenwen.soso.com%2Fp%2F20081010%2F20081010123437-2086652074.jpg"  /></div> 
+		</div>
+		    <h3> OO高达第二季</h3>
+			<p>西历2312年，自天人和国联军的宇宙决战已经过去四年。地球联邦政府为了树立新人类乃至于国家的统一和人类的统一，去除联邦正规军之外还组织了独立治安维护部队「A-Laws」。然而其实态却是借着统一的名目对反政府的势力及思想进行非人道的镇压。
+另一方面，在四年前的最终决战中生还的刹那和天人不断探寻这改变世界未来之路。「A-Laws」的镇压下的伪和平以及歪曲的事实。刹那决意与拥有改变世界力量的高达一起再次决斗。</p>
+	        <div align="center"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505325462424&di=660e25247142c5d7e68e56cff87c6d36&imgtype=0&src=http%3A%2F%2Fpsp.tgbus.com%2FUploadFiles%2F201004%2F20100409095331610.jpg"  /><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505325693327&di=d54f91412a3fbea32bb4f5bc19911b5d&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fb64543a98226cffcc9b0a3b0b9014a90f603ea1e.jpg"  /></div> 
+		</div>
+	</body> 
+</html>

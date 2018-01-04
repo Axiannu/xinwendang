@@ -1,0 +1,50 @@
+# Profile information
+name: Axiannu
+title: My Home
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+permalink: ':title/'
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://github.com/Axiannu" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Jekyll configuration
+
+sass:
+  sass_dir: _sass
+  style: compressed
+permalink: /:categories/:title/
+kramdown:
+  toc_levels: 1..2
+highlighter: rouge
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  
+# Social
+facebook: #Add your Facebook
+twitter: #Add your Twitter
+google-plus: #Add your Google+
+github: Mstinger
+
+# Contact form
+email: crc1764026842@gmail.com
+
+# Comments
+discus-identifier: # Add your Disqus identifier
+
+# Paginate
+paginate: 3
+paginate_path: /page:num/
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock
+include: [_pages]

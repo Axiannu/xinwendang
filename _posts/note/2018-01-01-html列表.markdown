@@ -1,0 +1,116 @@
+---
+layout: post
+title:  "html 中的列表"
+img: china_tiger_leaping_gorge.jpg
+date:   2018-01-01 00:00:00 +0200
+description: html中列表的基本使用
+category: note
+
+---
+
+
+在写前端代码的过程中，列表这个东西真的经常会用到(e.g.，目录)，是一个比较重要的内容。
+
+以下的内容摘录于 [w3school](http://www.w3school.com.cn/html/html_lists.asp) 并结合自己的理解。
+
+列表总共有三种：
+
+1. 无序列表
+    
+    定义的话，我也不知道怎么解释，觉得 w3cschool 上的解释也是比较的晦涩难懂。还是看看例子比较好。
+
+    示例代码：
+    
+        <ul>
+            <li>Coffee</li>
+            <li>Milk</li>
+        </ul>
+        
+    实际效果如下：
+    
+    <ul>
+        <li>Coffee</li>
+        <li>Milk</li>
+    </ul>
+    
+    简单的说，就是一系列的事物前带有的标记是一样的，没有顺序的区别。事物可以是段落、换行符、图片、链接或者是列表。
+    
+2. 有序列表
+
+    这个的话和上面的无序列表是一样的，只不过是标记符号不同，有序列表的标记序号是有序的，看看例子吧。
+    
+    示例代码：
+    
+        <ol>
+            <li>Coffee</li>
+            <li>Milk</li>
+        </ol>
+        
+    实际效果如下：
+    
+    <ol>
+        <li>Coffee</li>
+        <li>Milk</li>
+    </ol>
+
+3. 定义列表
+
+    这个和上面的两种的唯一区别就是对事物进行了解释，多加了一项解释项。还是一样的看看例子吧。
+    
+    示例代码：
+    
+        <dl>
+            <dt>Coffee</dt>
+            <dd>Black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>White cold drink</dd>
+        </dl>
+    
+    实际效果如下：
+    
+    <dl>
+        <dt>Coffee</dt>
+        <dd>Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+    </dl>
+    
+还有一个会经常用到的，就是嵌套的列表：
+
+示例代码：
+
+    <ul>
+      <li>咖啡</li>
+      <li>茶     //这里要注意，嵌套列表加的位置
+        <ul>
+        <li>红茶</li>
+        <li>绿茶
+          <ul>
+          <li>中国茶</li>
+          <li>非洲茶</li>
+          </ul>
+        </li>
+        </ul>
+      </li>
+      <li>牛奶</li>
+    </ul>
+
+实际的效果：
+
+<ul>
+  <li>咖啡</li>
+  <li>茶
+    <ul>
+    <li>红茶</li>
+    <li>绿茶
+      <ul>
+      <li>中国茶</li>
+      <li>非洲茶</li>
+      </ul>
+    </li>
+    </ul>
+  </li>
+  <li>牛奶</li>
+</ul>
+
+是不是懂了呢？欢迎指教=^_^= 

@@ -3,7 +3,7 @@ layout: post
 title:  "Jekyll 搭建博客"
 img: zagreb_city.jpg
 date:   2018-01-02 00:00:00 +0200
-description: Cras ac ex sit amet leo rhoncus elementum eget eget eros. Curabitur venenatis lacus eget tempus consequat. Duis feugiat vehicula bibendum. Aliquam imperdiet tortor in diam viverra scelerisque. Vestibulum erat odio, rutrum nec volutpat et, mattis id diam.
+description: 网络上关于jekyll博客搭建的文章参考
 categories:
   - posts
   - note

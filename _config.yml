@@ -36,7 +36,7 @@ email: crc1764026842@gmail.com
 discus-identifier: # Add your Disqus identifier
 
 # Paginate
-paginate: 3
+paginate: 15
 paginate_path: /page:num/
 
 # Build settings

@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Git教程"
+title: "Tableau辅助"
 date: 2018-01-02   
+description: 网络上关于tableau使用的文章参考帮助
 tag: 工具 
 category: note 
 ---

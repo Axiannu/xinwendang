@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Web网页设计作品集
+description: 这是我个人关于WEB网页制作的作品
 categories: portfolio
+
 ---
 
 <!doctype html>

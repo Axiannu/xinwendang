@@ -6,7 +6,7 @@ description: 网络上关于tableau使用的文章参考帮助
 tag: 工具 
 category: note 
 ---
-
+这是对于我有帮助的博文，可以快速找到有帮助的工具，希望看到这个的对你有些帮助。
 ### tableau 学习，参考书籍
 UnivDc7
 UnivDc7

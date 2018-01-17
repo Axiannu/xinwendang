@@ -8,7 +8,7 @@ category: note
 
 ---
 
-
+这是对于我有帮助的教程，希望看到这个的对你有些帮助
 在写前端代码的过程中，列表这个东西真的经常会用到(e.g.，目录)，是一个比较重要的内容。
 
 以下的内容摘录于 [w3school](http://www.w3school.com.cn/html/html_lists.asp) 并结合自己的理解。

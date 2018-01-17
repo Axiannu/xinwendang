@@ -7,7 +7,7 @@ category: note
 
 ---
 
-
+这是对于我有帮助的教程，希望看到这个的对你有些帮助
 以下的内容摘录于 [w3school](http://www.w3school.com.cn/html/html_images.asp) 并结合了自己的理解。
 
 在文档中显示图像，使用的是图像标签 `<img>`，需要注意的是这个标签是个空标签，意思是说它只包含属性，没有闭合标签。

@@ -12,20 +12,21 @@ category: note
 在进行博客编辑时，当内容过多时，回想将博客分类，这时候category: 属性就派上用场了，在文章的yaml文件头中增加category: 属性这个分类，就能为文章进行分类了。如果还要将文章分开成对应的属性进行显示，如笔记类只展现在笔记这个导航上，则需要创建一个index.html的文件，将下列代码填入：
 
 > 输入
-{% for post in site.categories.note %}
-<article class="main-article">
-  <div class="wrap-content">
-    <header class="header-article">
-      <h2 class="title-article"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-      <div class="post-date"><span>{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-    </header>
-    {% if post.img %}
-       <img class="post-image" src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
-    {% endif %}
-    <p>{{post.description}} <a class="more" href="{{post.url | prepend: site.baseurl}}">(Read more...)</a></p>
-  </div>
-</article>
-{% endfor %}
+ {% for post in site.categories.note %}
+ <article class="main-article">
+   <div class="wrap-content">
+     <header class="header-article">
+       <h2 class="title-article"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+       <div class="post-date"><span>{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+     </header>
+     {% if post.img %}
+        <img class="post-image" src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
+     {% endif %}
+     <p>{{post.description}} <a class="more" href="{{post.url | prepend: site.baseurl}}">(Read more...)</a></p>
+   </div>
+ </article>
+ {% endfor %}
+
 将categories.note后的note修改成自己的分类关键词就行。(以上是我的个人经验，并不对所有人生效，然后原理我也不是非常明白，只能搞得懂大概，需自行进行摸索)。
 
 

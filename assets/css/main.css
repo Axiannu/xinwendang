@@ -727,7 +727,7 @@ template {
 
 html {
   line-height: 1.5;
-  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  font-family: Kai,Kaiti SC,KaiTi,DFKai-SB,BiauKai,\\6977\4F53,\\6977\4F53_GB2312,Songti SC, Helvetica, Arial, sans-serif;
 }
 
 @media screen and (min-width: 500px) {

@@ -819,6 +819,7 @@ pre code {
   font-weight: 700;
   -webkit-transition: all .35s;
   transition: all .35s;
+  font-family: sans-serif
 }
 .sidebar-menu .menu-links:hover {
   -webkit-transform: translateY(3px);

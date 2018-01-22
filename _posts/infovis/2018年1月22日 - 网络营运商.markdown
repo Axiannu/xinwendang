@@ -1,0 +1,153 @@
+---
+layout: post
+title: 三大网络营运商<--
+date: 2018-01-22 10:49:20 +0300
+description: 三大营运商发展
+date: 2018-01-22
+tags: "infovis"
+categories:
+  - infovis
+---
+
+<!DOCTYPE html>
+<!-- saved from url=(0261)file:///C:/Users/SST/Desktop/%E5%91%A8%E5%9B%9B%E7%BD%91%E9%A1%B5/1.9%E6%9D%A5%E8%87%AA%E6%94%BE%E5%81%87%E5%90%8E%E7%9A%84%E6%8C%A3%E6%89%8E/2/%E4%BF%A1%E6%81%AF%E5%8F%AF%E8%A7%86%E5%8C%96F%E7%BB%84%E6%9C%9F%E4%B8%AD%E4%B8%93%E6%A1%88_-%2D%20-%20My%20Home.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>信息可视化F组期中专案&lt;-- - My Home</title>
+	<meta name="description" content="城乡收入差距与相关因素研究">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="https://axiannu.github.io/assets/img/favicon/1favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="https://axiannu.github.io/assets/img/favicon/1apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://axiannu.github.io/assets/img/1favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://axiannu.github.io/assets/img/1favicon/apple-touch-icon-114x114.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#2d2a2a">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#2d2a2a">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#2d2a2a">
+
+	<link href="./信息可视化F组期中专案_-- - My Home_files/css" rel="stylesheet">
+	<link rel="stylesheet" href="./信息可视化F组期中专案_-- - My Home_files/font-awesome.min.css">
+	<link rel="stylesheet" href="./信息可视化F组期中专案_-- - My Home_files/main.css">
+</head>
+
+<body>
+
+  
+
+
+  <main role="main">
+    <div class="content">
+      <article class="page-article">
+  <div class="wrap-content">
+    <header class="page-header">
+      <h1 class="page-title">高德数据之网络通讯三大营运商&lt;--</h1>
+      <div class="page-date"></div>
+    </header>
+    <div class="page-content">
+      
+      <h3 id="课题介绍城乡收入差距与相关因素研究">课题介绍：网络通讯相关研究</h3>
+<h5 id="摘取四个相关因素人力资本因素产业结构因素城市化水因素经济水平因素">摘取四个相关因素：地理分布因素、产业组成比例、总体数量、省份数量组成；</h5>
+<h6 id="数据来源国家数据">数据来源：高德API抓取</h6>
+<h4>中国网络营运厅：发展现状到底如何</h4>
+	我抓取了中国境内各个省份的营业厅数量及坐标点。数据总计约八万笔。进行数据处理如下：
+
+
+
+
+
+	
+	<title>example</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="./信息可视化F组期中专案_-- - My Home_files/tabstyles.css">
+
+
+	<div class="CenterMe">
+		
+	</div>
+	</div>
+ <meta charset="UTF-8">  
+  <title></title>  
+  <style type="text/css">  
+  *{  
+    margin: 0;  
+    padding: 0  
+  }  
+  body,html{  
+    height: 100%  
+  }  
+  ul{  
+    list-style: none;  
+    display: -webkit-box;  
+    display: -webkit-flex;  
+    -webkit-flex-flow:row nowrap;  
+    justify-content:space-around;  
+    align-content:flex-start;  
+    align-items:flex-start;  
+    background: #ccc;  
+    height: 100%  
+      
+  }  
+  li{  
+    width: 50%;  
+    height: 1090px;  
+    background: #d8d5d4;  
+  }  
+  </style>  
+
+<ul>  
+    
+  <li style="order:2;flex-grow:0">
+  <h7>在全国范围内，三家网络营运商的分布大都集中于沿海地区，这符合沿海经济发达的特点。</h7>
+  <a href="https://public.tableau.com/views/1_5372/sheet0?:embed=y&:display_count=yes">
+  <br>
+<img border="0" src="1.png" alt="地图数据" width="100%" height="400px"></a><br>
+
+ <h7>中国境内的网络营运商的总的数量对比，可以发现联通的营运商远远大于另外两大营运商，而另外电信与移动总体数量不相上下。</h7>
+ <a href="https://public.tableau.com/views/1_5372/sheet0?:embed=y&:display_count=yes">
+  <br>
+<img border="0" src="2.png" alt="整体数据条形图" width="100%" height="570px"></a><br>
+  
+  
+  </li>  
+  <li style="order:3;flex-grow:1">
+  <h7>然而在各个省份的分布情况来说，三大营运商在各省均都有分布，联通总体数量的优势并没有在这上面展现出该有的垄断优势。</h7>
+  <a href="https://public.tableau.com/views/1_5372/sheet0?:embed=y&:display_count=yes">
+  <br>
+<img border="0" src="3.png" alt="各省分布数据" width="100%" height="400px"></a><br>
+
+<h7>最后这个是中国营运商的组成比列</h7>
+  <a href="https://public.tableau.com/views/1_5372/sheet0?:embed=y&:display_count=yes">
+  <br>
+<img border="0" src="4.png" alt="饼图" width="300px" height="400px"></a><br>
+总体来看，三<font size="3">大网络营运商虽东西分布不均匀，这是由于受限于经济发展程度，但是仍有在西部建立自己的营运站点，为西部省份人民提供相应的网络服务。但是
+在我看来，在东部分布如此之多的营运站点这真的有必要吗？而且许多的营运站点在地区分布上还具有重复性，同一家营运商有时两家营运点相距其实并不是非常远
+，现如今部分地区已提供网络办公服务，线下的营运厅除非进行卡号销号等重要操作，均可在线上网络办理，联通如此之多的营运点，在将来可能还会成该公司最大的不必要指出。</font> 
+  
+  
+  </li>  
+  
+</ul>  
+
+  </div>
+</article>
+
+    </div>
+  </main>
+
+<script async="" src="./信息可视化F组期中专案_-- - My Home_files/analytics.js.下载"></script><script async="" src="./信息可视化F组期中专案_-- - My Home_files/analytics.js(1).下载"></script><script async="" src="./信息可视化F组期中专案_-- - My Home_files/analytics.js(2).下载"></script><script async="" src="./信息可视化F组期中专案_-- - My Home_files/analytics.js(3).下载"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+</body></html>

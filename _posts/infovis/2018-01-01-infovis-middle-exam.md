@@ -62,8 +62,7 @@ categories:
 				 经济因 素 、 城市化因 素 、 产业结构因素和人力资本因素 。
 				考察其对城乡收入差距的影响程度。</p>
 
-				<iframe src="https://public.tableau.com/views/_16012/sheet8?:embed=y&:display_count=yes&publish=yesDashboard1?:showVizHome=no&:embed=true" width="100%" height="860"></iframe>
-
+				
 			</section>
 
 			<section id="content3" class="tab-content">
@@ -74,7 +73,7 @@ categories:
 					<br>
 				在经济水平与泰尔指数之间的关系中，P值0.0107984，大于0.05，不呈相关关系，所以生产总值越高的省份泰尔指数不一定低或越高。
 				</p>
-				<iframe src="https://public.tableau.com/views/4_478/sheet2_1?:embed=y&:display_count=yes&publish=yesDashboard1?:showVizHome=no&:embed=true" width="100%" height="860"></iframe>
+				
 
 			</section>
 

@@ -1,0 +1,415 @@
+
+/*!
+ * Globalize v1.3.0-tableau.0 2017-08-07T16:33Z Released under the MIT license
+ * http://git.io/TrdQbw
+ */
+"undefined"!=typeof process&&"node"===process.release.name?global.localizeGlobalNamespace=global:window.localizeGlobalNamespace=window,function(a,b){a.TabGlobalize=b()}(localizeGlobalNamespace,function(){function a(b){if(!(this instanceof a))return new a(b);i(b,"locale"),k(b,"locale"),this._locale=b}var b=function(a){return"string"==typeof a?a:"number"==typeof a?""+a:JSON.stringify(a)},c=function(a,c){return a=a.replace(/{[0-9a-zA-Z-_. ]+}/g,function(a){return a=a.replace(/^{([^}]*)}$/,"$1"),b(c[a])})},d=function(){var a=arguments[0];return[].slice.call(arguments,1).forEach(function(b){var c;for(c in b)a[c]=b[c]}),a},e=function(a,b,e){var f;return b=a+(b?": "+c(b,e):""),f=new Error(b),f.code=a,d(f,e),f},f=function(a){return[].reduce.call(a,function(a,b){return 0|(a=(a<<5)-a+b.charCodeAt(0))},0)},g=function(a,b,c,d){var e;return d=d||JSON.stringify(c),e=f(a+b+d),e>0?"a"+e:"b"+Math.abs(e)},h=function(a,b,c,d){if(!c)throw e(a,b,d)},i=function(a,b){h("E_MISSING_PARAMETER","Missing required parameter `{name}`.",void 0!==a,{name:b})},j=function(a,b,c,d){h("E_INVALID_PAR_TYPE","Invalid `{name}` parameter ({value}). {expected} expected.",c,{expected:d,name:b,value:a})},k=function(a,b){j(a,b,void 0===a||"string"==typeof a,"a string")},l=function(a){return a.replace(/([.*+?^=!:${}()|\[\]\/\\])/g,"\\$1")},m=function(a,b,c){var d;for("string"!=typeof a&&(a=String(a)),d=a.length;d<b;d+=1)a=c?a+"0":"0"+a;return a};return a.locale=function(a){return k(a,"locale"),arguments.length&&(this._locale=a),this._locale},a._createError=e,a._formatMessage=c,a._regexpEscape=l,a._runtimeKey=g,a._stringPad=m,a._validateParameterPresence=i,a._validateParameterTypeString=k,a._validateParameterType=j,a}),function(a,b){b(a.TabGlobalize)}(localizeGlobalNamespace,function(a){var b=a._runtimeKey,c=a._validateParameterType,d=function(a){return null!==a&&""+a=="[object Object]"},e=function(a,b){c(a,b,void 0===a||d(a)||Array.isArray(a),"Array or Plain Object")},f=function(a){return function(b){return"number"!=typeof b&&"string"!=typeof b||(b=[].slice.call(arguments,0)),e(b,"variables"),a(b)}};return a._messageFormatterFn=f,a._messageFormat=function(){return{number:function(a,b){if(isNaN(a))throw new Error("'"+a+"' isn't a number.");return a-(b||0)},plural:function(a,b,c,d,e){if({}.hasOwnProperty.call(d,a))return d[a]();b&&(a-=b);var f=c(a,e);return f in d?d[f]():d.other()},select:function(a,b){return{}.hasOwnProperty.call(b,a)?b[a]():b.other()}}}(),a._validateParameterTypeMessageVariables=e,a.messageFormatter=a.prototype.messageFormatter=function(){return a[b("messageFormatter",this._locale,[].slice.call(arguments,0))]},a.formatMessage=a.prototype.formatMessage=function(a){return this.messageFormatter(a).apply({},[].slice.call(arguments,1))},a}),function(a,b){b(a.TabGlobalize)}(localizeGlobalNamespace,function(a){var b=a._runtimeKey,c=a._validateParameterPresence,d=a._validateParameterType,e=function(a,b){d(a,b,void 0===a||"number"==typeof a,"Number")},f=function(a){return function(b){return c(b,"value"),e(b,"value"),a(b)}};return a._pluralGeneratorFn=f,a._validateParameterTypeNumber=e,a.plural=a.prototype.plural=function(a,b){return c(a,"value"),e(a,"value"),this.pluralGenerator(b)(a)},a.pluralGenerator=a.prototype.pluralGenerator=function(c){return c=c||{},a[b("pluralGenerator",this._locale,[c])]},a});
+(function( root, factory ) {
+  root.Localize = root.Localize || {};
+  root.Localize.msg = new root.TabGlobalize('zh-Hans');
+  factory( root.TabGlobalize, root.Localize );
+  if (root.Localize.initFormattersAndParsers) {
+    root.Localize.initFormattersAndParsers();
+  }
+}(localizeGlobalNamespace, function( Globalize ) {
+var validateParameterTypeNumber = Globalize._validateParameterTypeNumber;
+var validateParameterPresence = Globalize._validateParameterPresence;
+var pluralGeneratorFn = Globalize._pluralGeneratorFn;
+var validateParameterTypeMessageVariables = Globalize._validateParameterTypeMessageVariables;
+var messageFormat = Globalize._messageFormat;
+var messageFormatterFn = Globalize._messageFormatterFn;
+
+Globalize.b1234768562 = pluralGeneratorFn(function(n) {
+  return 'other';
+});
+Globalize.a270771846 = messageFormatterFn((function(  ) {
+  return function (d) { return "主要刻度线"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a874251083 = messageFormatterFn((function(  ) {
+  return function (d) { return "认证方"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a454502410 = messageFormatterFn((function(  ) {
+  return function (d) { return "数据连接图标"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a900723150 = messageFormatterFn((function(  ) {
+  return function (d) { return "外部服务器连接图标"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1975929308 = messageFormatterFn((function(  ) {
+  return function (d) { return "文件图标"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a867644147 = messageFormatterFn((function(  ) {
+  return function (d) { return "实时连接"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b586999432 = messageFormatterFn((function(  ) {
+  return function (d) { return "上次数据提取:"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1810816393 = messageFormatterFn((function(  ) {
+  return function (d) { return "无数据连接"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a629637347 = messageFormatterFn((function(  ) {
+  return function (d) { return "查看更多详细信息"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1938979223 = messageFormatterFn((function(  ) {
+  return function (d) { return "Tableau Server 连接图标"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a889123077 = messageFormatterFn((function(  ) {
+  return function (d) { return "此工作簿连接到"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1461859113 = messageFormatterFn((function(  ) {
+  return function (d) { return "将视图快照添加到您的注释中"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1882459976 = messageFormatterFn((function(  ) {
+  return function (d) { return "注释"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a478362992 = messageFormatterFn((function(  ) {
+  return function (d) { return "关闭面板"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a987607170 = messageFormatterFn((function(  ) {
+  return function (d) { return "添加注释..."; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a652678051 = messageFormatterFn((function(  ) {
+  return function (d) { return "此视图上没有注释。"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1438282852 = messageFormatterFn((function(  ) {
+  return function (d) { return "@提及某人以通知他们。"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1062190308 = messageFormatterFn((function(  ) {
+  return function (d) { return "发布"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1146145651 = messageFormatterFn((function(  ) {
+  return function (d) { return "视图"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1250827655 = messageFormatterFn((function(  ) {
+  return function (d) { return "无法创建视图快照"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1279395072 = messageFormatterFn((function(  ) {
+  return function (d) { return "无法加载注释"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1150896226 = messageFormatterFn((function(  ) {
+  return function (d) { return "正在加载注释..."; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1855467552 = messageFormatterFn((function(  ) {
+  return function (d) { return "检查您的 Internet 连接并重试。"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a2116303110 = messageFormatterFn((function(  ) {
+  return function (d) { return "检查您的 Internet 连接并刷新以重试"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1113356286 = messageFormatterFn((function(  ) {
+  return function (d) { return "无法获取注释"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b789662859 = messageFormatterFn((function(  ) {
+  return function (d) { return "无法获取图像"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1616100185 = messageFormatterFn((function(  ) {
+  return function (d) { return "无法下载图像"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1292312682 = messageFormatterFn((function(  ) {
+  return function (d) { return "正在将快照的筛选器和选择应用于视图..."; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b760344358 = messageFormatterFn((function(  ) {
+  return function (d) { return "无法将 " + d.user + " 的快照应用于视图"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1919055361 = messageFormatterFn((function(  ) {
+  return function (d) { return "消息太长"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b2073566798 = messageFormatterFn((function(  ) {
+  return function (d) { return "无法发送。"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1973058227 = messageFormatterFn((function(  ) {
+  return function (d) { return "轻击以重试"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a57822842 = messageFormatterFn((function(  ) {
+  return function (d) { return "重试"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1233479252 = messageFormatterFn((function(  ) {
+  return function (d) { return "无法加载注释"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1443088850 = messageFormatterFn((function(  ) {
+  return function (d) { return "将不通知用户"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b6501566 = messageFormatterFn((function(  ) {
+  return function (d) { return "用户无权查看此视图，并且将不会获得通知"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a552620708 = messageFormatterFn((function( plural, pluralFuncs ) {
+  return function (d) { return plural(d.itemCount, 0, pluralFuncs["zh-Hans"], { one: function() { return "个用户";}, other: function() { return d.formattedItemCount + " 个用户";} }) + " 将不会获得通知。"; }
+})(messageFormat.plural, {"zh-Hans": Globalize("zh-Hans").pluralGenerator()}), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1416666777 = messageFormatterFn((function(  ) {
+  return function (d) { return "已移除用户"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a939091330 = messageFormatterFn((function( plural, pluralFuncs ) {
+  return function (d) { return plural(d.itemCount, 0, pluralFuncs["zh-Hans"], { one: function() { return "个用户";}, other: function() { return d.formattedItemCount + " 个用户";} }) + " 将不会获得有关 " + d.comment + " 的通知。"; }
+})(messageFormat.plural, {"zh-Hans": Globalize("zh-Hans").pluralGenerator()}), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b594275224 = messageFormatterFn((function(  ) {
+  return function (d) { return "出现未知错误"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a11562361 = messageFormatterFn((function(  ) {
+  return function (d) { return "移除快照"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1133417668 = messageFormatterFn((function(  ) {
+  return function (d) { return "Dismiss"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1816119763 = messageFormatterFn((function(  ) {
+  return function (d) { return "Unable to complete action"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1711812418 = messageFormatterFn((function(  ) {
+  return function (d) { return "Copy error message"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1845395898 = messageFormatterFn((function(  ) {
+  return function (d) { return "Go to support"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b320607509 = messageFormatterFn((function(  ) {
+  return function (d) { return "自动"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1028309814 = messageFormatterFn((function(  ) {
+  return function (d) { return "轴编辑属性"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1784973880 = messageFormatterFn((function(  ) {
+  return function (d) { return "轴范围选项"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1030603982 = messageFormatterFn((function(  ) {
+  return function (d) { return "轴标题"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1297737491 = messageFormatterFn((function(  ) {
+  return function (d) { return "天"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1938442750 = messageFormatterFn((function(  ) {
+  return function (d) { return "固定"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1949369837 = messageFormatterFn((function(  ) {
+  return function (d) { return "固定结束"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1027111782 = messageFormatterFn((function(  ) {
+  return function (d) { return "固定开始"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b797433806 = messageFormatterFn((function(  ) {
+  return function (d) { return "常规"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1922948785 = messageFormatterFn((function(  ) {
+  return function (d) { return "小时"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1756823984 = messageFormatterFn((function(  ) {
+  return function (d) { return "包括零"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1085576390 = messageFormatterFn((function(  ) {
+  return function (d) { return "独立"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a156594937 = messageFormatterFn((function(  ) {
+  return function (d) { return "每行或每列使用独立轴范围"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a971195483 = messageFormatterFn((function(  ) {
+  return function (d) { return "间隔"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b756775331 = messageFormatterFn((function(  ) {
+  return function (d) { return "输入有效数字。"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1127121768 = messageFormatterFn((function(  ) {
+  return function (d) { return "输入有效日期。"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1933376065 = messageFormatterFn((function(  ) {
+  return function (d) { return "对数"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1461954368 = messageFormatterFn((function(  ) {
+  return function (d) { return "对数底数必须大于一。"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a179960239 = messageFormatterFn((function(  ) {
+  return function (d) { return "对数轴原点必须大于零。"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b914471616 = messageFormatterFn((function(  ) {
+  return function (d) { return "证书图标"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1408123414 = messageFormatterFn((function(  ) {
+  return function (d) { return "主要刻度间距必须大于零。"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1719017226 = messageFormatterFn((function(  ) {
+  return function (d) { return "次要刻度线"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b384605678 = messageFormatterFn((function(  ) {
+  return function (d) { return "次要刻度间距必须大于零。"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b965872161 = messageFormatterFn((function(  ) {
+  return function (d) { return "分钟"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a443438281 = messageFormatterFn((function(  ) {
+  return function (d) { return "月"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b998857842 = messageFormatterFn((function(  ) {
+  return function (d) { return "无"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b427132323 = messageFormatterFn((function(  ) {
+  return function (d) { return "季度"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1264264466 = messageFormatterFn((function(  ) {
+  return function (d) { return "范围"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1926371441 = messageFormatterFn((function(  ) {
+  return function (d) { return "重置"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1772756504 = messageFormatterFn((function(  ) {
+  return function (d) { return "倒序"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b93217691 = messageFormatterFn((function(  ) {
+  return function (d) { return "比例"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1343044479 = messageFormatterFn((function(  ) {
+  return function (d) { return "秒"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b80649765 = messageFormatterFn((function(  ) {
+  return function (d) { return "显示时间"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1898568978 = messageFormatterFn((function(  ) {
+  return function (d) { return "副标题"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b887680558 = messageFormatterFn((function(  ) {
+  return function (d) { return "同步双轴"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1666980033 = messageFormatterFn((function(  ) {
+  return function (d) { return "刻度间隔"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1126066138 = messageFormatterFn((function(  ) {
+  return function (d) { return "刻度间隔(幂)"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1904210208 = messageFormatterFn((function(  ) {
+  return function (d) { return "刻度线"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a32705314 = messageFormatterFn((function(  ) {
+  return function (d) { return "刻度起点"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b35729832 = messageFormatterFn((function(  ) {
+  return function (d) { return "标题"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a668344062 = messageFormatterFn((function(  ) {
+  return function (d) { return "统一"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b399843073 = messageFormatterFn((function(  ) {
+  return function (d) { return "所有行或列使用统一轴范围"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b799511846 = messageFormatterFn((function(  ) {
+  return function (d) { return "单位"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1796571841 = messageFormatterFn((function(  ) {
+  return function (d) { return "周"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b25050026 = messageFormatterFn((function(  ) {
+  return function (d) { return "年"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1064196033 = messageFormatterFn((function(  ) {
+  return function (d) { return d.PROJECT_NAME; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1073236515 = messageFormatterFn((function(  ) {
+  return function (d) { return "您无权移到“" + d.PROJECT_NAME + "”"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a593600830 = messageFormatterFn((function(  ) {
+  return function (d) { return "无法将内容移到“" + d.PROJECT_NAME + "”"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1314992155 = messageFormatterFn((function(  ) {
+  return function (d) { return d.SITE_NAME + " (站点根目录)"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b951760955 = messageFormatterFn((function(  ) {
+  return function (d) { return "New field name:"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1705923038 = messageFormatterFn((function(  ) {
+  return function (d) { return "Size of bins:"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1493915028 = messageFormatterFn((function(  ) {
+  return function (d) { return "Range of Values:"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a793329592 = messageFormatterFn((function(  ) {
+  return function (d) { return "Min:"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a264989199 = messageFormatterFn((function(  ) {
+  return function (d) { return "Diff:"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1678669722 = messageFormatterFn((function(  ) {
+  return function (d) { return "Max:"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1876162215 = messageFormatterFn((function(  ) {
+  return function (d) { return "CntD:"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b980503812 = messageFormatterFn((function(  ) {
+  return function (d) { return "Suggest Bin Size"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b859231237 = messageFormatterFn((function(  ) {
+  return function (d) { return "字体系列"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b959355842 = messageFormatterFn((function(  ) {
+  return function (d) { return "字体大小"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b965539255 = messageFormatterFn((function(  ) {
+  return function (d) { return "加粗"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a651155198 = messageFormatterFn((function(  ) {
+  return function (d) { return "倾斜"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a966793410 = messageFormatterFn((function(  ) {
+  return function (d) { return "下划线"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b371496808 = messageFormatterFn((function(  ) {
+  return function (d) { return "颜色"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b899298160 = messageFormatterFn((function(  ) {
+  return function (d) { return "左侧"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a2100198494 = messageFormatterFn((function(  ) {
+  return function (d) { return "居中"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1586462971 = messageFormatterFn((function(  ) {
+  return function (d) { return "右侧"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1861113744 = messageFormatterFn((function(  ) {
+  return function (d) { return "链接"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a258672848 = messageFormatterFn((function(  ) {
+  return function (d) { return "文本"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1661786374 = messageFormatterFn((function(  ) {
+  return function (d) { return "插入"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b538781547 = messageFormatterFn((function(  ) {
+  return function (d) { return "插入字段"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1335485715 = messageFormatterFn((function(  ) {
+  return function (d) { return "清除格式"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1005796540 = messageFormatterFn((function(  ) {
+  return function (d) { return "清除格式"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1399071121 = messageFormatterFn((function(  ) {
+  return function (d) { return "应用"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a394930784 = messageFormatterFn((function(  ) {
+  return function (d) { return "应用"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b798498267 = messageFormatterFn((function(  ) {
+  return function (d) { return "取消"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1654658548 = messageFormatterFn((function(  ) {
+  return function (d) { return "取消"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a20617347 = messageFormatterFn((function(  ) {
+  return function (d) { return "确定"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.b1449218862 = messageFormatterFn((function(  ) {
+  return function (d) { return "确定"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a938727568 = messageFormatterFn((function(  ) {
+  return function (d) { return "重置"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a386407839 = messageFormatterFn((function(  ) {
+  return function (d) { return "重置"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a78746415 = messageFormatterFn((function(  ) {
+  return function (d) { return "编辑"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1075341446 = messageFormatterFn((function(  ) {
+  return function (d) { return "取消链接"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a424411568 = messageFormatterFn((function(  ) {
+  return function (d) { return "Close"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a657372504 = messageFormatterFn((function(  ) {
+  return function (d) { return "Close dialog"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+Globalize.a1335402452 = messageFormatterFn((function(  ) {
+  return function (d) { return "Select"; }
+})(), Globalize("zh-Hans").pluralGenerator({}));
+}));
